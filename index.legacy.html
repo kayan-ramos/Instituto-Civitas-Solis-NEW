@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto Civitas Solis - Filosofia, Cultura e Espiritualidade</title>
+  <meta name="description" content="Instituto Civitas Solis - Organização filosófico-cultural dedicada ao desenvolvimento humano integral através da ciência, arte e espiritualidade">
+  
+  <!-- Google Fonts - Montserrat (similar a Museo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'civitas-orange': {
+              DEFAULT: '#E36727',
+              50: '#fef5ee',
+              100: '#fde8d7',
+              200: '#facfae',
+              300: '#f7ad7a',
+              400: '#f38244',
+              500: '#E36727',
+              600: '#d45a20',
+              700: '#c55a1f',
+              800: '#9d481a',
+              900: '#7e3b18',
+            }
+          },
+          fontFamily: {
+            'museo': ['Montserrat', 'Helvetica', 'Arial', 'sans-serif'],
+            'serif': ['Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- i18next for internationalization -->
+  <script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/i18next.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Elfsight Platform -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://www.civitassolis.org.br/wp-content/uploads/2016/11/cropped-Screen-Shot-2014-05-05-at-1.04.44-AM-180x180.png">
+</head>
+<body class="min-h-screen bg-stone-50">
+  <!-- Header -->
+  <header id="header" class="bg-white shadow-md sticky top-0 z-50"></header>
+  
+  <!-- Main Content -->
+  <main id="main-content"></main>
+  
+  <!-- Footer -->
+  <footer id="footer" class="bg-gray-900 text-white py-12"></footer>
+  
+  <!-- Scripts -->
+  <script src="js/i18n-config.js"></script>
+  <script src="js/utils/icons.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/footer.js"></script>
+  <script src="js/components/email-contact.js"></script>
+  <script src="js/components/values-circle.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/missao-visao-valores.js"></script>
+  <script src="js/pages/youtube.js"></script>
+  <script src="js/pages/instagram.js"></script>
+  <script src="js/pages/contato.js"></script>
+  <script src="js/pages/livro.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
